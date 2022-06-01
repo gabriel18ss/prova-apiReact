@@ -1,0 +1,111 @@
+(1) /POST                                    /usuario/login
+
+
+request  {
+    "email": "",
+    "senha": ""
+}
+
+
+response (200)
+{
+    "id": 0,
+    "email": "",
+    "nome": ""
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////-
+
+(2)  /POST                                              /filme
+
+request body {
+    "nome",
+    "sinopse",
+    "avaliação":0.0,
+    "lançamentos":"2020-10-00",
+    "usuario": 0,
+    "disponivel": "true",
+    "imagem" "
+}
+
+response (204) 
+{
+    "id": "1"
+    "nome": "",
+    "sinopse": "",
+    "avaliação":0.0,
+    "lançamenstos":"2020-10-00",
+    "usuario" 0,
+    "disponivel": true,
+    "imagem": ""
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////\
+
+(3) /PUT                                                  /filme:id
+
+request (200)
+{
+    "nome": "",
+    "sinopse": "",
+    "avaliação":0.0,
+    "lançamenstos":"2020-10-00",
+    "usuario" 0,
+    "disponivel": true,
+    "imagem": ""
+}
+
+response (204)
+-- sem conteudo 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+(4) /DELETE                                                /filme/:id
+
+response(204)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+(5) /GET                                                  /filme
+
+response(200)
+[
+    {
+        "nome": "",
+        "avaliação":0.0,
+        "lançamentos":"2020-10-00",
+        "disponivel": true,
+        "usuario": 0
+    }
+]
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+(6) /GET                                                 /filme/:nome
+
+response
+[
+    {
+        "nome": "",
+        "avaliação":0.0,
+        "lançamentos":"2020-10-00",
+        "disponivel": true,
+        "usuario": 0
+    }
+]
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+(7) /GET                                                   /filme/:id
+
+response (200)
+{
+    "nome": "",
+    "avaliação":0.0,
+    "sinopse":
+    "lançamenstos":"2020-10-00",
+    "usuario" 0,
+    "disponivel": true,
+    "imagem": ""   
+}
